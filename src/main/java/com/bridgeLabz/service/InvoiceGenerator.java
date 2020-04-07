@@ -15,4 +15,12 @@ public class InvoiceGenerator {
     public static void main(String[] args){
         System.out.println("Welcome");
     }
+
+    public double calculateFare(Ride[] rides) {
+        double fare = 0;
+        for(Ride ride:rides){
+            fare += this.calculateFare(ride.distance, ride.time);
+        }
+        return fare;
+    }
 }
