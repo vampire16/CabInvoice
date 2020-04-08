@@ -4,10 +4,10 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class InvoiceTestCases {
+    InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
 
     @Test
     public void givenDistanceAndTime__ThenReturnTotalFare() {
-        InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
         double distance = 2.0;
         int time = 5;
         double fare = invoiceGenerator.calculateFare(distance,time);
@@ -16,7 +16,6 @@ public class InvoiceTestCases {
 
     @Test
     public void givenDistanceOrTime_ShouldReturnMinFare() {
-        InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
         double distance = 0.1;
         int time = 1;
         double fare = invoiceGenerator.calculateFare(distance,time);
@@ -25,7 +24,6 @@ public class InvoiceTestCases {
 
     @Test
     public void givenMultipleRides_ShouldReturnFare() {
-        InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
         Ride[] rides = { new Ride(2.0,5),
                          new Ride(0.1,1)
         };
