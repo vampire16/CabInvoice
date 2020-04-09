@@ -1,4 +1,5 @@
 import com.bridgeLabz.service.InvoiceGenerator;
+import com.bridgeLabz.service.InvoiceSummary;
 import com.bridgeLabz.service.Ride;
 import org.junit.Assert;
 import org.junit.Test;
@@ -23,11 +24,12 @@ public class InvoiceTestCases {
     }
 
     @Test
-    public void givenMultipleRides_ShouldReturnFare() {
+    public void givenMultipleRides_ShouldReturnSummary() {
         Ride[] rides = { new Ride(2.0,5),
-                         new Ride(0.1,1)
+                new Ride(0.1,1)
         };
-        double fare = invoiceGenerator.calculateFare(rides);
-        Assert.assertEquals(30, fare, 0);
+        InvoiceSummary summary = invoiceGenerator.calculateFare(rides);
+        InvoiceSummary expectedSummary = new InvoiceSummary(2, 30.0);
+        Assert.assertEquals(expectedSummary, summary);
     }
 }
