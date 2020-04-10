@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="InvoiceTestCases" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-04-09T04:17:54" hostname="DESKTOP-7UGSU5P" time="0.008">
+<testsuite name="InvoiceTestCases" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-04-10T03:00:10" hostname="DESKTOP-7UGSU5P" time="0.033">
   <properties/>
-  <testcase name="givenDistanceOrTime_ShouldReturnMinFare" classname="InvoiceTestCases" time="0.002"/>
-  <testcase name="givenUserIdAndRides_ShouldReturnSummary" classname="InvoiceTestCases" time="0.003"/>
-  <testcase name="givenDistanceAndTime__ThenReturnTotalFare" classname="InvoiceTestCases" time="0.001"/>
-  <testcase name="givenMultipleRides_ShouldReturnSummary" classname="InvoiceTestCases" time="0.001"/>
+  <testcase name="givenDistanceOrTime_ShouldReturnMinFare" classname="InvoiceTestCases" time="0.005"/>
+  <testcase name="givenUserIdAndRides_ShouldReturnPremiumSummary" classname="InvoiceTestCases" time="0.007"/>
+  <testcase name="givenUserIdAndRides_ShouldReturnSummary" classname="InvoiceTestCases" time="0.002"/>
+  <testcase name="givenDistanceAndTime__ThenReturnTotalFare" classname="InvoiceTestCases" time="0.0"/>
+  <testcase name="givenDistanceAndTime__ThenReturnPremiumTotalFare" classname="InvoiceTestCases" time="0.0"/>
+  <testcase name="givenDistanceOrTime_ShouldReturnPremiumMinFare" classname="InvoiceTestCases" time="0.001"/>
+  <testcase name="givenMultipleRides_ShouldReturnSummary" classname="InvoiceTestCases" time="0.002"/>
+  <testcase name="givenMultipleRides_ShouldReturnPremiumSummary" classname="InvoiceTestCases" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
